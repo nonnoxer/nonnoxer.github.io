@@ -1,3 +1,3 @@
-function rickroll() {
-  $("#rickrolled").html('<iframe name="removethisisyoucan" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>')
+function goto() {
+  $("#gotoed").html('<iframe src="https://www.openprocessing.org/sketch/658208/embed/" width=100% height=100%></iframe><button><a href="https://nonnoxer.github.io">Go Back</a></button>')
 }
