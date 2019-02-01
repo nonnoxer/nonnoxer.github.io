@@ -15,4 +15,4 @@ function count() {
 
 function destroy() {
   $("body").addClass("animated hinge");
-}
+} 
