@@ -15,5 +15,4 @@ function count() {
 
 function destroy() {
   $("body").addClass("animated hinge");
-  $("body").after('<a href="https://nonnoxer.github.io">Reverse time using space magic?</a>');
 }
