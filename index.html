@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>nonnox</title>
+		<title>nonnoxer</title>
 		<link rel="icon" href="source/Smiley.png">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<link rel="stylesheet" href="source/style.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	</head>
-	<body>
-		<div class="header">
-			<img src="source/banner.png" width="100%">
-		</div>
+	<body onload="page_init()">
 		<div class="row">
 			<div class="col-1"></div>
-			<div class="col-3" class="center">
-				<div class="github-card" data-user="nonnoxer"></div>
-				<ul>
-					<li>Studies at Raffles Insitution</li>
-					<li>Programs in Python</li>
-					<li>Plays the guitar</li>
-					<li>Folds origami</li>
-				</ul>
-			</div>
-			<div class="col-1"></div>
-			<div class="col-6">
-				<p>Welcome to my website!<p>
-				<p>Here you can find links to some of my stuff</p>
-				<table class="table">
-					<tr>
-						<th>Projects</th>
-						<th></th>
-					</tr>
-					<tr>
-						<td><a href="https://gituhb.com/nonnoxer/konikal">Konikal</a></td>
-						<td>A flask-based CMS</td>
-					</tr>
-					<tr>
-						<td><a href="https://gituhb.com/nonnoxer/filmfalm">Filmfalm</a></td>
-						<td>A basic movie review app</td>
-					</tr>
-					<tr>
-						<td><a href="https://gituhb.com/nonnoxer/oneButton">OneButton</a></td>
-						<td>A simple one-button game</td>
-					</tr>
-					<tr>
-						<td><a href="https://gituhb.com/nonnoxer/shmup">Shmup</a></td>
-						<td>A simple space shooting game</td>
-					</tr>
-				</table>
-				<p><b>Other stuff</b></p>
-				<p><a href="https://github.com/nonnoxer">My Github</a></p>
-				<p><a href="https://twitter.com/nonnoxer_">My Twitter</a></p>
-				<p><a href="https://reddit.com/user/nonnoxer">My Reddit</a></p>
-				<p><a href="https://steamcommunity.com/id/nonnoxer">My Steam</a></p>
+			<div class="col-10" style="text-align: center;">
+				<h1>RI Simulator</h1>
+				<div id="game">
+					<div id="start">
+						<button onclick="game_new()">New Game</button><br>
+						<button onclick="game_load()">Load Game</button><br>
+					</div>
+					<div id="create">
+						<h2>Create Your Student</h2>
+						<p>Intelligence: x (Your core ability to score)</p> 
+						<p>Hardworking: x (Your ability to improve your intelligence)</p>
+						<p>Fitness: x (Your ability to do PE)</p>
+						<p>Sociability: x (Friendliness)</p>
+						<p>Edginess: x (Your online presence)</p>
+						<p>Compliance: x (Your ability to obey the rules)</p>
+					</div>
+				</div>
+				<h2>About</h2>
+				<p>RI Simulator is being built to simulate a stereotypical RI student. Enjoy!</p>
+				<p>Note: development in progress</p>
 			</div>
 			<div class="col-1"></div>
 		</div>
-		<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+		<script src="source/script.js"></script>
 	</body>
 </html>
