@@ -17,14 +17,16 @@
 						<button onclick="game_new()">New Game</button><br>
 						<button onclick="game_load()">Load Game</button><br>
 					</div>
-					<div id="create">
+					<div id="create" onchange="game_create_update()">
 						<h2>Create Your Student</h2>
-						<p>Intelligence: x (Your core ability to score)</p> 
-						<p>Hardworking: x (Your ability to improve your intelligence)</p>
-						<p>Fitness: x (Your ability to do PE)</p>
-						<p>Sociability: x (Friendliness)</p>
-						<p>Edginess: x (Your online presence)</p>
-						<p>Compliance: x (Your ability to obey the rules)</p>
+						<p>Name: <input id="nme" type="name" value="Freddy"></p>
+						<p><span title="Ability to score">Intelligence:</span> <span id="itl"></span> <input id="itl_range" type="range" min="0" max="100" value="100"></p> 
+						<p><span title="Ability to mug">Hardworking:</span> <span id="hwk"></span> <input id="hwk_range" type="range" min="0" max="100" value="100"></p>
+						<p><span title="Ability to do PE">Fitness:</span> <span id="fit"></span> <input id="fit_range" type="range" min="0" max="100" value="100"></p>
+						<p><span title="Ability to make friends">Sociability:</span> <span id="scb"></span> <input id="scb_range" type="range" min="0" max="100" value="100"></p>
+						<p><span title="Ability to make memes">Edginess:</span> <span id="edg"></span> <input id="edg_range" type="range" min="0" max="100" value="100"></p>
+						<p><span title="Ability to not get in trouble">Compliance:</span> <span id="cpl"></span> <input id="cpl_range" type="range" min="0" max="100" value="100"></p>
+						<button onclick="game_create_finish()">Create</button>
 					</div>
 				</div>
 				<h2>About</h2>
